@@ -73,6 +73,16 @@ ES6 classes are not something that is radically new: They mainly provide more co
 
 
 // Define a class like this
+    class Point {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+        toString() {
+            return '(' + this.x + ', ' + this.y + ')';
+        }
+    }
+    
 function Superhero(firstName, lastName, superPower){
 
  // Add object properties like this
