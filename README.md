@@ -74,7 +74,33 @@ var spiderman = new Superhero(‘Peter’, ‘Parker’, ‘Web Slinging’);
 
 * Explain Benefits of this pattern.
 
-* Encapsulation and Inheritance
+*  Prototypal (es5) Inheritance
+```javascript
+function Vehicle (name, type) {
+  this.name = name;
+  this.type = type;
+};
+ 
+Vehicle.prototype.getName = function getName () {
+  return this.name;
+};
+ 
+Vehicle.prototype.getType = function getType () {
+  return this.type;
+};
+function Car (name) {
+  Vehicle.call(this, name, ‘car’);
+}
+Car.prototype = Object.create(Vehicle.prototype);
+Car.prototype.constructor = Car;
+Car.parent = Vehicle.prototype;
+Car.prototype.getName = function () {
+  return 'It is a car: '+ this.name;
+};
+var car = new Car('Tesla');
+console.log(car.getName()); // It is a car: Tesla
+console.log(car.getType()); // car
+```
 
 * Explain Syntactical benefits of classes in JS.
 ES6 classes are not something that is radically new: They mainly provide more convenient syntax to create old-school constructor functions.
@@ -110,4 +136,38 @@ let superman = new Superhero("Clark", “Kent”, “Flight”);
 let batman = new Superhero("Bruce", "Wayne", "rich");
 batman.speak();
 
+```
+
+* ES6 Class Inheritence
+```javascript
+class Vehicle {
+ 
+  constructor (name, type) {
+    this.name = name;
+    this.type = type;
+  }
+ 
+  getName () {
+    return this.name;
+  }
+ 
+  getType () {
+    return this.type;
+  }
+ 
+}
+class Car extends Vehicle {
+ 
+  constructor (name) {
+    super(name, 'car');
+  }
+ 
+  getName () {
+    return 'It is a car: ' + super.getName();
+  }
+ 
+}
+let car = new Car('Tesla');
+console.log(car.getName()); // It is a car: Tesla
+console.log(car.getType()); // car
 ```
