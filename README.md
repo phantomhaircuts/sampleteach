@@ -1,10 +1,11 @@
 # Prototypal Inheritance
 
 ## Learning Objectives
+* Understand Prototype Constructor Patterns
+* Explore Classes and ES2015
 * Demonstrate a use case that explains prototypal inheritance
 * Demonstrate what kind of flexibility prototypal inheritance gives programmers
-* Understand Prototype Constructor Patterns
-* Explore Inheritance with Classes and ES6
+
 
 
 
