@@ -3,14 +3,14 @@
 ## Learning Objectives
 * Demonstrate a use case that explains prototypal inheritance
 * Demonstrate what kind of flexibility prototypal inheritance gives programmers
-* Explore Prototypal Inheritance
-* Explore Inheritance with Classes and ES6
 * Understand Prototype Constructor Patterns
+* Explore Inheritance with Classes and ES6
+
 
 
 ## Opening
 ### Object Literals
-  - We have worked with objects in Javascript. As a collection of properties associated with a name (key) and a value.
+  - We have worked with objects in Javascript. As a collection of properties associated with  key value pairs.
   - Thus far we have created and initialized objects like this:
 
 ```javascript
