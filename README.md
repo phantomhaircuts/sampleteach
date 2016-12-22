@@ -48,6 +48,8 @@
 * Prototypes and Constructor?
 
 ```javascript
+//ES5...
+
 function Superhero(firstName, lastName, superPower){
 
  // Add object properties like this
@@ -62,6 +64,26 @@ Superhero.prototype.speak = function(){
 };
 
 // Instantiate new objects with 'new'
+let superman = new Superhero("Clark", "Kent", "Flight");
+let batman = new Superhero("Bruce", "Wayne", "money");
+let wonderwoman = new Superhero("Diana", "Prince", "Super Strength");
+batman.speak();
+superman.speak();
+wonderwoman.speak();
+
+ES6...
+
+class Superhero {
+  constructor(firstName, lastName, superPower){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.superPower = superPower;
+  }
+  speak(){
+     console.log(this.firstName + " " + this.lastName + "  is here to save the day with my " + this.superPower + "!" );
+  }
+}
+
 let superman = new Superhero("Clark", "Kent", "Flight");
 let batman = new Superhero("Bruce", "Wayne", "money");
 let wonderwoman = new Superhero("Diana", "Prince", "Super Strength");
