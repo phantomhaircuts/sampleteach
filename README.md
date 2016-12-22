@@ -12,7 +12,7 @@
   - We have worked with objects in Javascript. As a collection of properties associated with a name (key) and a value.
   - Thus far we have created and initialized objects like this:
 
-```
+```javascript
   var superman = {
      name: 'clark kent',
      superpower: 'flight'
@@ -45,7 +45,7 @@
 ## Introduction
 * What is a Prototype?
 
-```
+```javascript
 function Superhero () {}
 ​
 Superhero.prototype.firstName = "Clark";
@@ -61,7 +61,7 @@ console.log(superman.superPower); // flight
 
 * What is a Constructor?
 
-```
+```javascript
 function Superhero(firstName, lastName, superPower) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -80,7 +80,7 @@ var spiderman = new Superhero(‘Peter’, ‘Parker’, ‘Web Slinging’);
 ES6 classes are not something that is radically new: They mainly provide more convenient syntax to create old-school constructor functions.
 
 
-```
+```javascript
 // Define a class like this
     class Point {
         constructor(x, y) {
