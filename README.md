@@ -1,0 +1,2 @@
+# sampleteach
+Prototypal Inheritance 
