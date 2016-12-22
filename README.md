@@ -2,13 +2,14 @@
 
 ## Learning Objectives
 * Demonstrate a use case that explains prototypal inheritance
-* Demonstrate what kind of flexibility prototypal inheritance gives programmers.
-* Explore Prototypal Inheritance.
+* Demonstrate what kind of flexibility prototypal inheritance gives programmers
+* Explore Prototypal Inheritance
+* Explore Inheritance with Classes and ES6
 * Understand Prototype Constructor Patterns
 
 
 ## Opening
-* Start with Object Literals
+### Object Literals
   - We have worked with objects in Javascript. As a collection of properties associated with a name (key) and a value.
   - Thus far we have created and initialized objects like this:
 
@@ -19,17 +20,18 @@
   }
 ```
 
-  - This is known as object literals.
+  - instantiating an object in this way is known as an **object literal**.
 
-* Explain Benefits of one off objects.
-  - This is simple and easy to read.
+* Benefits of Object Literals.
+  - They are simple and easy to read.
   - We have created a variable of superman who has a name and a super power.
+  - Good to use when you need a simple container for data. Such as when we want to create a variable for the hero above.
+  
+* The case of Multiple Instances
+  - But what happens when we have a team of superheroes like the X-men?
+  - When we have an endless cast of rotating heroes it can be cumbersome and confusing literally instantiate an object for     each of these.
 
-* Explain Scenario of multiple objects.
-  - But what happens when he have a team of superheroes like the X-men?
-  - When we have a limitless cast of rotating heroes it can be cumbersome and confusing literally instantiate an object for each of these.
-
-* Explain use case Prototypes and Constructor Pattern.
+* Prototype and Constructor Pattern.
   - Prototypes to the rescue!
   Prototype, a prototype is an object used as a fallback source of properties. The prototype is the parent object. New objects *inherit* properties of the parent object (prototype).
 
