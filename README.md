@@ -43,35 +43,30 @@
   - Encapsulation... We cloak our superheroes methods and properties from allowing the super powers falling into the wrong hands.
 
 ## Introduction
-* What is a Prototype?
+* What is a Prototype and Constructor?
 
 ```javascript
-function Superhero () {}
-​
-Superhero.prototype.firstName = "Clark";
-Superhero.prototype.lastName = "Kent";
-Superhero.prototype.superPower = “Flight”;
+function Superhero(firstName, lastName, superPower){
+
+ // Add object properties like this
+ this.firstName = firstName;
+ this.lastName = lastName;
+ this.superPower = superPower
+}
+
+// Add methods like this.  All Person objects will be able to invoke this
+Superhero.prototype.speak = function(){
+  console.log(this.firstName + " " + this.lastName + "  is here to save the day with my " + this.superPower + "!" );
 };
-​
-​var superman = new Superhero () //​
-console.log(superman.fullName()); // Clark Kent​
-console.log(superman.superPower); // flight
 
+// Instantiate new objects with 'new'
+let superman = new Superhero("Clark", "Kent", "Flight");
+let batman = new Superhero("Bruce", "Wayne", "money");
+let wonderwoman = new Superhero("Diana", "Prince", "Super Strength");
+batman.speak();
+superman.speak();
+wonderwoman.speak();
 ```
-
-* What is a Constructor?
-
-```javascript
-function Superhero(firstName, lastName, superPower) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.superPower = superPower;
-};
-var superman = new Superhero(‘Clark’, ‘Kent’, ‘Flight’);
-var spiderman = new Superhero(‘Peter’, ‘Parker’, ‘Web Slinging’);
-
-```
-
 * Explain Benefits of this pattern.
 
 *  Prototypal (es5) Inheritance
