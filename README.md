@@ -29,20 +29,18 @@
   
 * The case of Multiple Instances
   - But what happens when we have a team of superheroes like the X-men?
-  - When we have an endless cast of rotating heroes it can be cumbersome and confusing literally instantiate an object for     each of these.
+  - When we have an endless cast of rotating heroes it can be cumbersome, confusing, and tedius to literally instantiate literal objects for each of these.
 
 * Prototype and Constructor Pattern.
-  - Prototypes to the rescue!
-  Prototype, a prototype is an object used as a fallback source of properties. The prototype is the parent object. New objects *inherit* properties of the parent object (prototype).
+  - **Prototypes** to the rescue!
+  **Prototype**, a prototype is an object used as a fallback source of properties. Think of a prototype as a blueprint for future objects. The prototype is the parent of subsquent child objects. New objects *inherit* properties of the parent object (prototype).
 
-  Buy Why?
-    - Benefits... Saves memory, encapsulation.
-    - The Prototype enables us to easily define methods to all instances while saving memory. The methods and properties applied to the prototype are advantageous because they are only stored in the memory once.
+  But Why and What for?
+* The Prototype enables us to easily define methods to all instances while saving memory. The methods and properties applied to the prototype are advantageous because they are only stored in the memory once.
 
-  Prototypes and constructors help us to save memory, to keep our code DRY.
-  It also helps with Encapsulation, enclosing all the functionalities so that methods and properties are hidden from the rest of the application.
-  - We cloak our superheroes from allowing the super powers falling into the wrong hands.
-  So let's get into it:
+* Prototypes and constructors help us to save memory, to keep our code DRY.
+ * It also helps with Encapsulation, enclosing all the functionalities so that methods and properties are hidden from the rest of the application.
+  - Encapsulation... We cloak our superheroes methods and properties from allowing the super powers falling into the wrong hands.
 
 ## Introduction
 * What is a Prototype?
