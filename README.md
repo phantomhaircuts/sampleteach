@@ -71,7 +71,7 @@ batman.speak();
 superman.speak();
 wonderwoman.speak();
 
-ES6...
+//ES6...
 
 class Superhero {
   constructor(firstName, lastName, superPower){
