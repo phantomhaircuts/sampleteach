@@ -1,6 +1,7 @@
 # Prototypal Inheritance
 
 ## Learning Objectives
+* Illustrate the importance of OOP.
 * Understand Prototype Constructor Patterns
 * Explore Classes and ES2015
 * Demonstrate a use case that explains prototypal inheritance
