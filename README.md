@@ -2,13 +2,8 @@
 
 ## Learning Objectives
 * Illustrate the importance of OOP.
-* Understand Prototype Constructor Patterns
-* Explore Classes and ES2015
-* Demonstrate a use case that explains prototypal inheritance
-* Demonstrate what kind of flexibility prototypal inheritance gives programmers
-
-
-
+* Explore Javascript Classes
+* Create instances using the keyword **new**
 
 ## Opening
 ### Object Literals
@@ -33,19 +28,19 @@
   - But what happens when we have a team of superheroes like the X-men?
   - When we have an endless cast of rotating heroes it can be cumbersome, confusing, and tedius to literally instantiate literal objects for each of these.
 
-* Prototype and Constructor Pattern.
-  - **Prototypes** to the rescue!
-  **Prototype**, a prototype is an object used as a fallback source of properties. Think of a prototype as a blueprint for future objects. The prototype is the parent of subsquent child objects. New objects *inherit* properties of the parent object (prototype).
+* Classes!
+  - **Classes** to the rescue!
+  **Classes**, Classes are "special functions”, which serve as blueprints for objects and methods.
 
   But Why and What for?
-* The Prototype enables us to easily define methods to all instances while saving memory. The methods and properties applied to the prototype are advantageous because they are only stored in the memory once.
+* A class enables us to easily define methods to all instances while saving memory. The methods and properties applied to the class are advantageous because they are only stored in the memory once.
 
-* Prototypes and constructors help us to save memory, to keep our code DRY.
+* Classes help us to save memory, to keep our code DRY.
  * It also helps with Encapsulation, enclosing all the functionalities so that methods and properties are hidden from the rest of the application.
   - Encapsulation... We cloak our superheroes methods and properties from allowing the super powers falling into the wrong hands.
 
 ## Introduction
-* Prototypes and Constructor?
+* Classes and Constructors?
 
 ```javascript
 //ES6...
