@@ -1,4 +1,4 @@
-# Prototypal Inheritance
+# Javascript Classes
 
 ## Learning Objectives
 * Illustrate the importance of OOP.
